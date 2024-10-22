@@ -20,8 +20,10 @@ function Navbar() {
             <i className="fa-solid fa-angle-down"></i>
         </li>
         <li>
+            <a href="#"><abbr title="Korporativ">Korporativ</abbr></a>
         </li>
         <li>
+            <a href="#"><abbr title="Əlaqə">Əlaqə</abbr></a>
         </li>
       </ul>
       <div className="nav-third-box">
