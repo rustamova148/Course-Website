@@ -1,0 +1,85 @@
+.section1{
+    background-color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 25px;
+}
+.field{
+    background-color: #F4F4F6;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+    width: 49%;
+    cursor: pointer;
+}
+.field:hover{
+    animation: fieldUp 0.7s ease forwards;
+}
+@keyframes fieldUp {
+    from{margin-top: 0;}
+    to{
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+.field-img img{
+    width: 130px;
+}
+.sec1-fields{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.sec1-header{
+    margin-top: 38px;
+    font-size: 45px;
+    color: #212529;
+    text-align: center;
+}
+.field-text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.field-text h2{
+    font-size: 26px;
+    color: #212529;
+}
+.field-text p{
+    color: #212529;
+}
+@media screen and (max-width: 1298px){
+    .field{
+        width: 48%;
+    }
+    .sec1-header{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 838px){
+    .field{
+        gap: 20px;
+    }
+    .field-text h2{
+        font-size: 19px;
+    }
+    .field-text p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 693px){
+    .field{
+        width: 100%;
+    }
+    .section1{
+        padding: 0 45px;
+    }
+    .sec1-header{
+        font-size: 23px;
+    }
+}
