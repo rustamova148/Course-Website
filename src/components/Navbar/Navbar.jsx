@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 import "./Navbar.css";
+import navlogo from '../../assets/logo-1.png';
+import menuicon from '../../assets/menu-icon.svg'
 
 function Navbar() {
 const navRef = useRef();
@@ -22,7 +24,7 @@ const toggleSubmenu = (id) => {
   return (
     <nav>
       <abbr title="proqramlaşdırma kursu">
-        <img className="nav-logo" src="/src/assets/logo-1.png" alt="logo" />
+        <img className="nav-logo" src={navlogo} alt="logo" />
       </abbr>
       <ul className="mainul">
         <li> 
@@ -32,31 +34,31 @@ const toggleSubmenu = (id) => {
                <ul className="drop-inside">
                   <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                     Akademiya haqqında
                   </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Missiya və vizyon
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Vakansiyalar
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Blog
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Sosial məsuliyyət
                     </a>
                   </li>
@@ -70,37 +72,37 @@ const toggleSubmenu = (id) => {
               <ul className="drop-inside">
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Fullstack Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Digital Marketing Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Data Science Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Product Owner kursu
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   IT Project Management kursu
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   IT Biznes Analitika kursu
                   </a>
                 </li>
@@ -114,13 +116,13 @@ const toggleSubmenu = (id) => {
               <ul className="drop-inside">
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Mərkəz haqda
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Gələcək maaşını hesabla
                   </a>
                 </li>
@@ -171,31 +173,31 @@ const toggleSubmenu = (id) => {
                <ul className="drop-inside">
                   <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                     Akademiya haqqında
                   </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Missiya və vizyon
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Vakansiyalar
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Blog
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                    <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                    <img src={menuicon} alt="icon"/>
                       Sosial məsuliyyət
                     </a>
                   </li>
@@ -209,37 +211,37 @@ const toggleSubmenu = (id) => {
               <ul className="drop-inside">
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Fullstack Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Digital Marketing Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Data Science Kadr Yetişdirmə Proqramı
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Product Owner kursu
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   IT Project Management kursu
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   IT Biznes Analitika kursu
                   </a>
                 </li>
@@ -253,13 +255,13 @@ const toggleSubmenu = (id) => {
               <ul className="drop-inside">
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Mərkəz haqda
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                  <img src="/src/assets/menu-icon.svg" alt="icon"/>
+                  <img src={menuicon} alt="icon"/>
                   Gələcək maaşını hesabla
                   </a>
                 </li>

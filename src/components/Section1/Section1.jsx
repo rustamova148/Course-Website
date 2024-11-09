@@ -1,4 +1,5 @@
 import './Section1.css'
+import house from '../../assets/house.png'
 
 function Section1() {
   return (
@@ -9,7 +10,7 @@ function Section1() {
       <div className="sec1-fields">
         <div className="field">
           <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
           <h2>Fullstack Kadr Yetişdirmə Proqramı</h2>
@@ -18,7 +19,7 @@ function Section1() {
         </div>
         <div className="field">
         <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
           <h2>Digital Marketing Kadr Yetişdirmə Proqramı</h2>
@@ -27,7 +28,7 @@ function Section1() {
         </div>
         <div className="field">
         <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
             <h2>Data Science Kadr Yetişdirmə Proqramı</h2>
@@ -36,7 +37,7 @@ function Section1() {
         </div>
         <div className="field">
         <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
             <h2>IT Project Management kursu</h2>
@@ -45,7 +46,7 @@ function Section1() {
         </div>
         <div className="field">
         <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
             <h2>Product Owner kursu</h2>
@@ -53,7 +54,7 @@ function Section1() {
         </div>
         <div className="field">
         <div className="field-img">
-            <img src="/src/assets/house.png" alt="house" />
+            <img src={house} alt="house" />
           </div>
           <div className="field-text">
             <h2>IT Biznes Analitika kursları</h2>

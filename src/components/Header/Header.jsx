@@ -1,6 +1,9 @@
 import "./Header.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import slider1 from '../../assets/slider1.png'
+import slider2 from '../../assets/slider2.png'
+import slider3 from '../../assets/slider3.png'
 
 import "swiper/css";
 import 'swiper/css/navigation';
@@ -34,7 +37,7 @@ function Header() {
           <div className="header-img-box">
           <div className="header-image"></div>
           <div className="header-img-img">
-          <img src="/src/assets/slider1.png" alt="slider1" />
+          <img src={slider1} alt="slider1" />
           </div>
           </div>
         </SwiperSlide>
@@ -47,7 +50,7 @@ function Header() {
           <div className="header-img-box">
           <div className="header-image"></div>
           <div className="header-img-img">
-          <img src="/src/assets/slider2.png" alt="slider2" />
+          <img src={slider2} alt="slider2" />
           </div>
           </div>
         </SwiperSlide>
@@ -60,7 +63,7 @@ function Header() {
           <div className="header-img-box">
           <div className="header-image"></div>
           <div className="header-img-img">
-          <img src="/src/assets/slider3.png" alt="slider3" />
+          <img src={slider3} alt="slider3" />
           </div>
           </div>
         </SwiperSlide>
