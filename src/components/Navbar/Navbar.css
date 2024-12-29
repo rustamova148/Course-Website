@@ -5,12 +5,15 @@ nav{
     justify-content: space-between;
     gap: 30px;
     height: 72.5px;
-    padding: 0 40px;
+    padding-left: 130px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+}
+.resp-menu{
+    display: none;
 }
 nav .menu-bar{
     display: none;
@@ -167,10 +170,10 @@ abbr[title] {
 .nav-dropdown1{
     border-top: 2px solid rgb(221, 220, 220);
     background-color: #FFFFFF;
-    width: 1467px;
+    width: 1685px;
     position: absolute;
     top: 70px;
-    margin-left: -310px;
+    margin-left: -457px;
     padding: 25px 305px;
     opacity: 0;
     visibility: hidden;
@@ -185,8 +188,8 @@ abbr[title] {
     visibility: hidden;
     position: absolute;
     top: 70px;
-    width: 1467px;
-    margin-left: -424px;
+    width: 1685px;
+    margin-left: -574px;
     padding: 25px 305px;
     background-color: #FFFFFF;
     border-top: 2px solid rgb(221, 220, 220);
@@ -201,8 +204,8 @@ abbr[title] {
     top: 70px;
     opacity: 0;
     visibility: hidden;
-    width: 1467px;
-    margin-left: -513px;
+    width: 1685px;
+    margin-left: -664px;
     padding: 25px 305px;
     background-color: #FFFFFF;
     border-top: 2px solid rgb(221, 220, 220);
@@ -290,6 +293,9 @@ abbr[title] {
     .mainul{
         display: none !important;
     }
+    .resp-menu{
+        display: block;
+    }
     .nav-socials{
         display: flex;
     }
@@ -332,7 +338,7 @@ abbr[title] {
         display: none;
     }
     .mainul2{
-        padding: 30px 800px;
+        padding: 30px 870px;
     }
     .mainul2 li{
         display: flex;

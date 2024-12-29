@@ -24,7 +24,7 @@ const toggleSubmenu = (id) => {
   return (
     <nav>
       <abbr title="proqramlaşdırma kursu">
-        <img className="nav-logo" src={navlogo} alt="logo" />
+      <img className="nav-logo" src={navlogo} alt="logo" />
       </abbr>
       <ul className="mainul">
         <li> 
