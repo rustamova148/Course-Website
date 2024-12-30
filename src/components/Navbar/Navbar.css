@@ -174,7 +174,7 @@ abbr[title] {
     position: absolute;
     top: 70px;
     margin-left: -457px;
-    padding: 25px 305px;
+    padding: 25px 438px;
     opacity: 0;
     visibility: hidden;
 }
@@ -190,7 +190,7 @@ abbr[title] {
     top: 70px;
     width: 1685px;
     margin-left: -574px;
-    padding: 25px 305px;
+    padding: 25px 438px;
     background-color: #FFFFFF;
     border-top: 2px solid rgb(221, 220, 220);
 }
@@ -206,7 +206,7 @@ abbr[title] {
     visibility: hidden;
     width: 1685px;
     margin-left: -664px;
-    padding: 25px 305px;
+    padding: 25px 438px;
     background-color: #FFFFFF;
     border-top: 2px solid rgb(221, 220, 220);
 }
