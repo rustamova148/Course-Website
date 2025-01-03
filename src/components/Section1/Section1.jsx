@@ -13,7 +13,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-          <h2>Fullstack Kadr Yetişdirmə Proqramı</h2>
+          <h2>Fullstack Proqramlaşdırma</h2>
           <p>HTML, CSS, Tailwind, JS, React, NextJS, NodeJS, MongoDB, XML, API, Git, Deployment</p>
           </div>
         </div>
@@ -22,7 +22,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-          <h2>Digital Marketing Kadr Yetişdirmə Proqramı</h2>
+          <h2>Digital Marketing</h2>
           <p>Marketinqə giriş, Rəqəmsal marketinq, SMM, Kontent ilə işləmə, Google Ads və s.</p>
           </div>
         </div>
@@ -31,7 +31,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-            <h2>Data Science Kadr Yetişdirmə Proqramı</h2>
+            <h2>Data Science</h2>
             <p>Data Science-a giriş, Python, SQL, Data analitika, Machine Learning, Süni intellekt</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-            <h2>IT Project Management kursu</h2>
+            <h2>IT Project Management</h2>
             <p>Agile, Waterfall metodları, Project structures, Soft skills, Risk analysis və s.</p>
           </div>
         </div>
@@ -49,7 +49,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-            <h2>Product Owner kursu</h2>
+            <h2>Product Owner</h2>
           </div>
         </div>
         <div className="field">
@@ -57,7 +57,7 @@ function Section1() {
             <img src={house} alt="house" />
           </div>
           <div className="field-text">
-            <h2>IT Biznes Analitika kursları</h2>
+            <h2>IT Biznes Analitika</h2>
           </div>
         </div>
       </div>

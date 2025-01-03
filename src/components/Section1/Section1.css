@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 25px;
+    padding: 80px;
     padding-bottom: 98px;
 }
 .field{
@@ -54,6 +54,12 @@
 .field-text p{
     color: #212529;
 }
+@media screen and (max-width: 1409px){
+    .field{
+        width: 46%;
+    }
+}
+
 @media screen and (max-width: 1298px){
     .field{
         width: 48%;
@@ -62,20 +68,38 @@
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 1044px){
+    .field-text h2{
+        font-size: 18px;
+    }
+    .field-text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 921px){
+    .field{
+        gap: 10px;
+    }
+}
 @media screen and (max-width: 838px){
     .field{
+        width: 100%;
         gap: 20px;
     }
     .field-text h2{
-        font-size: 19px;
+        font-size: 18px;
     }
     .field-text p{
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 693px){
-    .field{
-        width: 100%;
+    .field-text h2{
+        font-size: 18px;
+    }
+    .field-text p{
+        font-size: 15px;
     }
     .section1{
         padding: 0 45px;

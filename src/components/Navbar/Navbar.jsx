@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import "./Navbar.css";
-import navlogo from '../../assets/logo-1.png';
 import menuicon from '../../assets/menu-icon.svg'
 
 function Navbar() {
@@ -24,7 +23,7 @@ const toggleSubmenu = (id) => {
   return (
     <nav>
       <abbr title="proqramlaşdırma kursu">
-      <img className="nav-logo" src={navlogo} alt="logo" />
+      <p className="logo">Coders</p>
       </abbr>
       <ul className="mainul">
         <li> 

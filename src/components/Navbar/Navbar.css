@@ -12,6 +12,12 @@ nav{
     left: 0;
     z-index: 1000;
 }
+.logo{
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
 .resp-menu{
     display: none;
 }
@@ -170,7 +176,7 @@ abbr[title] {
 .nav-dropdown1{
     border-top: 2px solid rgb(221, 220, 220);
     background-color: #FFFFFF;
-    width: 1685px;
+    width: 1760px;
     position: absolute;
     top: 70px;
     margin-left: -457px;
@@ -188,7 +194,7 @@ abbr[title] {
     visibility: hidden;
     position: absolute;
     top: 70px;
-    width: 1685px;
+    width: 1760px;
     margin-left: -574px;
     padding: 25px 438px;
     background-color: #FFFFFF;
@@ -204,7 +210,7 @@ abbr[title] {
     top: 70px;
     opacity: 0;
     visibility: hidden;
-    width: 1685px;
+    width: 1760px;
     margin-left: -664px;
     padding: 25px 438px;
     background-color: #FFFFFF;
