@@ -107,7 +107,7 @@ const Section3 = () => {
     <div className="sec3">
       <div className="calc">
         <div className="calc-part calc-part1">
-          <p style={{ fontSize: "35px", fontWeight: "600", marginBottom: '14px' }}>
+          <p className = 'calc-headp' style={{ fontSize: "35px", fontWeight: "600", marginBottom: '14px' }}>
             Gələcək maaşını hesabla &#128526;
           </p>
           <div className="calc-inputs" style={{display: 'flex', flexDirection: 'column', gap: '20px'}} >
@@ -138,8 +138,8 @@ const Section3 = () => {
                 ]}
               />
               <div className="way" style={{display: 'flex', flexDirection: 'column', gap: '13px'}}>
-                <p style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>Necə öyrənəcəksən?</p>
-                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <p className='wayp' style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>Necə öyrənəcəksən?</p>
+                <div className = 'wayradio' style={{display: 'flex', justifyContent: 'space-between'}}>
                   <div style={{display: 'flex', gap: '5px'}}>
                   <input type="radio" name = "option1" id="coders" value = "coders"
                   checked = {selectedRadio1 === "coders"} 
@@ -157,8 +157,8 @@ const Section3 = () => {
                   </div>
                 </div>
               </div>
-              <div style={{width: '100%', height: '80px', border: "1px solid #c9c9c9", padding: "10px", borderRadius: '7px'}}>
-                  <span style={{color: '#969696', fontSize: '14px', display: 'inline-block', marginBottom: '7px'}}>Gündə neçə saat məşğul olacaqsan?</span> <br />
+              <div className='rgv1' style={{width: '100%', height: '80px', border: "1px solid #c9c9c9", padding: "10px", borderRadius: '7px'}}>
+                  <span className='rgv1-span' style={{color: '#969696', fontSize: '14px', display: 'inline-block', marginBottom: '7px'}}>Gündə neçə saat məşğul olacaqsan?</span> <br />
                   <div style={{display: "flex", justifyContent: "space-between"}}>
                   <span>{rangeValue1}</span>
                   <span>saat</span>
@@ -167,7 +167,7 @@ const Section3 = () => {
                   onChange={(e) => setRangeValue1(e.target.value)} />
               </div>
               <div className="language-skills" style={{display: 'flex', flexDirection: 'column', gap: '13px'}}>
-                <p style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>İngilis dili biliyin</p>
+                <p className='langp' style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>İngilis dili biliyin</p>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <div style={{display: 'flex', gap: '5px'}}>
                   <input type="radio" name = "option2" id="weak" value="weak"
@@ -186,8 +186,8 @@ const Section3 = () => {
                   </div>
                 </div>
               </div>
-              <div style={{width: '100%', height: '80px', border: "1px solid #c9c9c9", padding: "10px", borderRadius: '7px'}}>
-                  <span style={{color: '#969696', fontSize: '14px', display: 'inline-block', marginBottom: '7px'}}>Sahə üzrə iş təcrübən</span> <br />
+              <div className = 'rgv2' style={{width: '100%', height: '80px', border: "1px solid #c9c9c9", padding: "10px", borderRadius: '7px'}}>
+                  <span className='rgv2-span' style={{color: '#969696', fontSize: '14px', display: 'inline-block', marginBottom: '7px'}}>Sahə üzrə iş təcrübən</span> <br />
                   <div style={{display: "flex", justifyContent: "space-between"}}>
                   <span>{rangeValue2}</span>
                   <span>il</span>

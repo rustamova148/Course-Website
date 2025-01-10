@@ -6,7 +6,7 @@
     align-items: center;
 }
 .calc{
-    width: 1200px;
+    width: 70%;
     min-height: 600px;
     border-radius:  40px;
     display: flex;
@@ -28,4 +28,87 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media only screen and (max-width:1226px){
+    .calc{
+        flex-direction: column;
+        width: 90%;
+        padding-left: 70px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .calc-part1{
+        width: 90%;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 1px;
+        min-height: 300px;
+    }
+    .calc-part2{
+        width: 90%;
+        border-top-right-radius: 1px;
+        border-bottom-left-radius: 40px;
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width:602px){
+    .wayradio{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+@media only screen and (max-width:564px){
+    .calc-headp{
+        font-size: 25px !important;
+    }
+    .wayp{
+        font-size: 16px !important;
+    }
+    .langp{
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width:538px){
+    .calc{
+        padding-left: 35px;
+    }
+}
+@media only screen and (max-width: 499px){
+    .rgv1-span{
+        font-size: 11px !important;
+    }
+    .rgv2-span{
+        font-size: 11px !important;
+    }
+}
+@media only screen and (max-width: 438px){
+    .rgv1-span{
+        font-size: 9px !important;
+    }
+    .rgv2-span{
+        font-size: 9px !important;
+    }
+}
+@media only screen and (max-width: 428px){
+    .calc-headp{
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width:421px){
+    .calc{
+        padding-left: 29px;
+    }
+}
+@media only screen and (max-width:402px){
+    .calc{
+        padding-left: 10px;
+    }
+    .calc-part{
+        padding: 20px;
+    }
+    .calc-part1,.calc-part2{
+        width: 100%;
+    }
 }
