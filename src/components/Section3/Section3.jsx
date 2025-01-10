@@ -1,20 +1,114 @@
 import "./Section3.css";
 import { Select } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Section3 = () => {
+  const [selectedField, setSelectedField] = useState('- - Sahəni seçin - -');
+  const [selectedRadio1, setSelectedRadio1] = useState('coders');
   const [rangeValue1, setRangeValue1] = useState(0);
+  const [selectedRadio2, setSelectedRadio2] = useState('weak');
   const [rangeValue2, setRangeValue2] = useState(0);
 
   const handleChange = (value) => {
-    console.log(`selected ${value}`);
+    setSelectedField(value);
   };
+
+  const handleChange2 = (e) => {
+    setSelectedRadio1(e.target.value);
+  }
+  
+  const handleChange3 = (e) => {
+    setSelectedRadio2(e.target.value);
+  }
+
+  console.log(selectedField);
+  console.log(selectedRadio1);
+  console.log(rangeValue1);
+  console.log(selectedRadio2);
+  console.log(rangeValue2);
+
+  useEffect(() => {
+
+    let initialSalary = selectedField == 'Fullstack Proqramlaşdırma' ? 600 
+    : selectedField == 'Backend Proqramlaşdırma (PHP, Java, Python, NodeJS)' ? 900
+    : selectedField == 'Digital Marketing (SMM)' ? 700
+    : selectedField == '- - Sahəni seçin - -';
+    
+    let salary = initialSalary;
+    let percent = 0;
+    let month = 0;
+
+    if(salary != 0 && selectedField != '- - Sahəni seçin - -' && rangeValue1 != 0){
+      month = 1;
+    }else{
+      month = 0;
+    }
+
+    if(selectedRadio1 === 'coders'){
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+        salary = 0
+      }
+    }else if(selectedRadio1 === 'self'){
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+          salary = 0;
+      }else{
+          salary -= 200;
+        } 
+    }else if(selectedRadio1 === 'other'){
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+        salary = 0;
+      }else{
+        salary -= 150;
+      }
+    }
+
+    if(rangeValue1 > 2){
+      if(selectedField == '- - Sahəni seçin - -'){
+        salary = 0;
+      }else{
+        salary += (Number(rangeValue1) - 2) * 10;
+      }
+    }
+
+    if(selectedRadio2 === 'weak'){
+      salary += 0;
+    }else if(selectedRadio2 === 'medium'){
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+        salary = 0;
+      }else{
+        salary += 40;
+      }
+    }else if(selectedRadio2 === 'excellent'){
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+        salary = 0;
+      }else{
+        salary += 70;
+      }
+    }
+
+    if(rangeValue2 > 0){
+      salary *= Math.pow(1.4,rangeValue2);
+      if(rangeValue1 == 0 || selectedField == '- - Sahəni seçin - -'){
+        percent = 0;
+      }else{
+        percent += rangeValue2 * 20;
+      }
+    }
+    
+
+    document.getElementById('salary').innerHTML = Math.round(salary);
+    document.getElementById('percent').innerHTML = percent;
+    document.getElementById('month').innerHTML = month;
+
+  }, [selectedField, selectedRadio1, selectedRadio2, rangeValue1, rangeValue2])
+   
+    
   return (
     <div className="sec3">
       <div className="calc">
         <div className="calc-part calc-part1">
-          <p style={{ fontSize: "40px", fontWeight: "600", marginBottom: '14px' }}>
-            Gələcək maaşını hesabla
+          <p style={{ fontSize: "35px", fontWeight: "600", marginBottom: '14px' }}>
+            Gələcək maaşını hesabla &#128526;
           </p>
           <div className="calc-inputs" style={{display: 'flex', flexDirection: 'column', gap: '20px'}} >
               <Select
@@ -47,13 +141,19 @@ const Section3 = () => {
                 <p style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>Necə öyrənəcəksən?</p>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option1" id="coders" /> <label htmlFor="coders">Coders-də</label>
+                  <input type="radio" name = "option1" id="coders" value = "coders"
+                  checked = {selectedRadio1 === "coders"} 
+                  onChange={handleChange2}/> <label htmlFor="coders">Coders-də</label>
                   </div>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option1" id="self" /><label htmlFor="self">Özüm</label>
+                  <input type="radio" name = "option1" id="self" value = "self" 
+                  checked = {selectedRadio1 === "self"} 
+                  onChange={handleChange2}/><label htmlFor="self">Özüm</label>
                   </div>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option1" id="other" /><label htmlFor="other">Digər kurslarda</label>
+                  <input type="radio" name = "option1" id="other" value="other" 
+                  checked = {selectedRadio1 === "other"} 
+                  onChange={handleChange2}/><label htmlFor="other">Digər kurslarda</label>
                   </div>
                 </div>
               </div>
@@ -70,13 +170,19 @@ const Section3 = () => {
                 <p style={{fontSize: '20px', fontWeight: '600', color: '#404040' }}>İngilis dili biliyin</p>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option2" id="weak" /> <label htmlFor="weak">Zəif</label>
+                  <input type="radio" name = "option2" id="weak" value="weak"
+                  checked = {selectedRadio2 === "weak"} 
+                  onChange={handleChange3}/> <label htmlFor="weak">Zəif</label>
                   </div>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option2" id="medium" /><label htmlFor="medium">Orta</label>
+                  <input type="radio" name = "option2" id="medium" value="medium"
+                  checked = {selectedRadio2 === "medium"} 
+                  onChange={handleChange3}/><label htmlFor="medium">Orta</label>
                   </div>
                   <div style={{display: 'flex', gap: '5px'}}>
-                  <input type="radio" name = "option2" id="excellent" /><label htmlFor="excellent">Əla</label>
+                  <input type="radio" name = "option2" id="excellent" value="excellent"
+                  checked = {selectedRadio2 === "excellent"} 
+                  onChange={handleChange3}/><label htmlFor="excellent">Əla</label>
                   </div>
                 </div>
               </div>
@@ -104,7 +210,7 @@ const Section3 = () => {
               gap: "7px",
             }}
           >
-            <span>2000</span>
+            <span id='salary'></span>
             <i className="fa-solid fa-manat-sign"></i>
           </p>
           <hr />
@@ -112,21 +218,21 @@ const Section3 = () => {
             <p style={{ color: "grey", fontSize: "14px" }}>
               İnvestisiyanın geri dönüş müddəti
             </p>
-            <p style={{ fontSize: "25px", fontWeight: "600" }}>1 ay</p>
+            <p style={{ fontSize: "25px", fontWeight: "600", display: 'flex', gap: '3px' }}>
+              <span id="month">0</span>
+              <span>ay</span>
+            </p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
             <p style={{ color: "grey", fontSize: "14px" }}>Gələcək vəzifən</p>
-            <p style={{ fontSize: "23px", fontWeight: "600" }}>
-              Backend developer, Web developer, Full-stack developer, Software
-              developer, Software engineer, CTO, IT director, IT project manager
-            </p>
+            <p id="jobs" style={{ fontSize: "23px", fontWeight: "600" }}></p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
             <p style={{ color: "grey", fontSize: "14px" }}>
               Xarici şirkətlərdən iş təklifi alma ehtimalın
             </p>
             <p style={{ fontSize: "25px", display: "flex", fontWeight: "600" }}>
-              <span>0</span>
+              <span id='percent'>0</span>
               <span>%</span>
             </p>
           </div>

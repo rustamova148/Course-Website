@@ -24,8 +24,6 @@ function Header() {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         autoplay = {{delay: 6000}}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <div className="header-slide">
