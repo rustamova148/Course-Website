@@ -1,21 +1,22 @@
 import './App.css'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
-import Section1 from './components/Section1/Section1'
-import Section2 from './components/Section2/Section2'
-import Section3 from './components/Section3/Section3'
+import Home from './pages/Home/Home'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import Blog from './pages/Blog/Blog'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
   return (
     <div className='app'>
+      <BrowserRouter>
       <Navbar />
-      <Header />
-      <Section1 />
-      <Section2 />
-      <Section3 />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/blog/:id' element={<Blog />} />
+      </Routes>
       <Footer />
+    </BrowserRouter>
     </div>
   )
 }
