@@ -59,6 +59,9 @@
   }
 }
 @media only screen and (max-width: 926px){
+  .sec5{
+    padding-top: 30px;
+  }
   .resp-bsec5{
     display: block;
   }
