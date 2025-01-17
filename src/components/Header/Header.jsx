@@ -70,12 +70,12 @@ function Header() {
           <form>
             <select className="head-reg-select" style={{color: "gray", fontSize: "15px"}}>
               <option value="" disabled selected hidden>Kursu seçin</option>
-              <option value="fullstack">Fullstack Kadr Yetişdirmə Proqramı</option>
-              <option value="digital-marketing">Digital Marketing Kadr Yetişdirmə Proqramı</option>
-              <option value="data-science">Data Science Kadr Yetişdirmə Proqramı</option>
-              <option value="product-owner">Product Owner kursu</option>
-              <option value="it-project-management">IT Project Management kursu</option>
-              <option value="it-biznes-analitika">IT Biznes Analitika kursu</option>
+              <option value="fullstack">Fullstack Proqramlaşdırma</option>
+              <option value="digital-marketing">Digital Marketing</option>
+              <option value="data-science">Data Science</option>
+              <option value="product-owner">Product Owner</option>
+              <option value="it-project-management">IT Project Management</option>
+              <option value="it-biznes-analitika">IT Biznes Analitika</option>
             </select>
             <div className="select-arrows">
             <i className="fa-solid fa-caret-up"></i>

@@ -1,0 +1,56 @@
+.sec7{
+    min-height: 400px;
+    background-color: #80DD7F;
+    padding: 70px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.s7part1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.s7part1 p:first-child{
+    font-size: 40px;
+    font-weight: 700;
+}
+.s7form{
+    display: flex;
+    gap: 20px;
+}
+.s7form input, .s7form select{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 330px;
+}
+.s7form input[type=submit]{
+   background-color: #162316;
+   border: 1px solid #162316;
+   color: white;
+   font-weight: 700;
+   width: 330px;
+   cursor: pointer;
+}
+.s7form input[type=submit]:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 1120px){
+    .sec7{
+        padding: 70px 100px;
+    }
+}
+@media only screen and (max-width: 1014px){
+    .s7form{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 430px){
+    .sec7{
+        padding: 70px 50px;
+    }
+}
