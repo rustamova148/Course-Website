@@ -2,7 +2,8 @@ import { useRef, useState } from "react";
 import "./Navbar.css";
 import menuicon from '../../assets/menu-icon.svg'
 
-function Navbar() {
+// eslint-disable-next-line react/prop-types
+function Navbar({isDarkMode, onToggle}) {
 const navRef = useRef();
 
   function openMenu(){
@@ -137,12 +138,13 @@ const toggleSubmenu = (id) => {
       </ul>
       <div className="nav-third-box">
         <div className="mode">
-          <span>
-            İşıqları <br /> söndür
-          </span>
+            {isDarkMode ? <span>İşıqları <br /> yandır</span> 
+            : <span>İşıqları <br /> söndür</span>}
           <div className="mode-btn-box">
-            <input type="checkbox" id="switch-mode" />
-            <label htmlFor="switch-mode" className="mode-btn"></label>
+            <input type="checkbox" id="navbar-switch-mode" 
+            checked={isDarkMode} onChange={onToggle}
+            />
+            <label htmlFor="navbar-switch-mode" className="mode-btn"></label>
           </div>
         </div>
         <div className="nav-socials">

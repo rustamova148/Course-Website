@@ -123,11 +123,11 @@ abbr[title] {
 .mode-btn-box input{
     display: none;
 }
-.mode-btn-box input:checked ~ label:after{
+.mode-btn-box input:checked ~ label.mode-btn:after{
     left: 18px;
     transition: 0.5s;
 }
-.mode-btn-box input:checked ~ label{
+.mode-btn-box input:checked ~ label.mode-btn{
     background-color: #02C902;
 }
 .nav-socials{

@@ -3,9 +3,34 @@
     min-height: 482px;
     display: flex;
     padding: 70px 155px;
+    gap: 160px;
 }
 .fooparts1{
     display: flex;
     flex-direction: column;
-    gap: 250px;
+    gap: 240px;
+    color: #585858;
+}
+.fooparts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 65px;
+}
+.fsocials{
+    display: flex;
+    gap: 18px;
+}
+.fsocials div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fsocials div i{
+    color: rgb(67, 67, 67);
+    font-size: 15px;
 }
