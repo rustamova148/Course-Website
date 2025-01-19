@@ -5,6 +5,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Blog from './pages/Blog/Blog'
 import Footer from './components/Footer/Footer'
 import { useState } from 'react'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 const [isDarkMode, setIsDarkMode] = useState(false);
@@ -15,6 +16,7 @@ const handleToggle = () => {
   return (
     <div className='app'>
       <BrowserRouter>
+      <ScrollToTop />
       <Navbar isDarkMode={isDarkMode} onToggle={handleToggle} />
       <Routes>
         <Route path='/' element={<Home />} />

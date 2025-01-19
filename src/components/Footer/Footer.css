@@ -2,6 +2,7 @@
     background-color: #F4F4F6;
     min-height: 482px;
     display: flex;
+    flex-wrap: wrap;
     padding: 70px 155px;
     gap: 160px;
 }
@@ -33,4 +34,53 @@
 .fsocials div i{
     color: rgb(67, 67, 67);
     font-size: 15px;
+}
+.fsocials div:hover{
+    background-color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.fsocials div:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.fooparts2 b p:hover{
+    cursor: pointer;
+    color: rgb(141, 141, 141) !important;
+    transition: 0.7s;
+}
+.fooparts3 p:hover{
+    cursor: pointer;
+    color: rgb(163, 163, 163) !important;
+    transition: 0.7s;
+}
+.flogo{
+    color: #008000;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1609px){
+    .footer{
+        column-gap: 300px;
+    }
+}
+@media only screen and (max-width: 1457px){
+    .footer{
+        column-gap: 400px;
+    }
+}
+@media only screen and (max-width: 1091px){
+    .footer{
+        row-gap: 40px;
+    }
+    .fooparts1{
+        row-gap: 70px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .footer{
+        padding: 70px 40px;
+    }
 }

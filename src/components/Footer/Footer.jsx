@@ -4,13 +4,13 @@ function Footer({isDarkMode, onToggle}) {
   return (
     <div className='footer'>
       <div className='fooparts1'>
-      <p className="logo">Coders</p>
+      <p className="flogo">Coders</p>
       <div>
         <p style={{fontSize: '14px', color: 'gray'}}>Copyright © 2025 Coders Academy</p> 
         <p style={{fontSize: '14px', color: 'gray'}}>Proqramlaşdırma kursları</p>
       </div>
       </div>
-      <div className='fooparts'>
+      <div className='fooparts fooparts2'>
         <b><p style={{color: '#212529', fontSize: '15px'}}>Akademiya haqqında</p></b>
         <b><p style={{color: '#212529', fontSize: '15px'}}>Missiya və vizyon</p></b>
         <b><p style={{color: '#212529', fontSize: '15px'}}>Vakansiyalar</p></b>
@@ -18,7 +18,7 @@ function Footer({isDarkMode, onToggle}) {
         <b><p style={{color: '#212529', fontSize: '15px'}}>Korporativ əməkdaşlıq</p></b>
         <b><p style={{color: '#212529', fontSize: '15px'}}>Əlaqə</p></b>
       </div>
-      <div className='fooparts'>
+      <div className='fooparts fooparts3'>
         <p style={{color: '#585858', fontSize: '14px'}}>Fullstack Proqramlaşdırma</p>
         <p style={{color: '#585858', fontSize: '14px'}}>Digital Marketing</p>
         <p style={{color: '#585858', fontSize: '14px'}}>Data Science</p>

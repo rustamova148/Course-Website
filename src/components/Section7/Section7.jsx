@@ -19,7 +19,7 @@ const Section7 = () => {
               <option value="it-project-management">IT Project Management</option>
               <option value="it-biznes-analitika">IT Biznes Analitika</option>
         </select>
-        <input onClick = {(e => e.preventDefault())} type="submit" value="Sorğu göndər" />
+        <input type="submit" value="Sorğu göndər" />
         </form>
     </div>
   )
