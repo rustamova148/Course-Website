@@ -28,9 +28,9 @@ Kiber təhlükələrdən qorunmaq mümkündür – sadəcə bəzi qaydalara riay
     
 
 Təhlükəsizliyinin təminatçısı  🔑 <br />
-Div Academy olaraq, sənə kibertəhlükəsizlik sahəsində ən müasir bilikləri təqdim edirik. <br />Texnologiyadan qorxma – onu idarə etməyi öyrən! ⚡
+ Academy olaraq, sənə kibertəhlükəsizlik sahəsində ən müasir bilikləri təqdim edirik. <br />Texnologiyadan qorxma – onu idarə etməyi öyrən! ⚡
 <br /> <br />
- Div Academy ilə gələcəyə inamla addımla.</p> 
+ Coders Academy ilə gələcəyə inamla addımla.</p> 
  : id === '2' ? <p className='blog-text'>Proqramlaşdırma dedikdə bir çoxumuzun ağlına qarışıq kodlar, kompüter qarşısında gecələyən eynəkli proqramistlər, bəzilərimizin isə YouTube-dakı hind aksenti ilə danışan müəllimlər gəlir.. <br /> <br />
 
  Düşünürük ki, proqramlaşdırma yalnız iş dünyasında istifadə olunan kompleks saytlar və tətbiqlərin yaradıldığı yüksək maaşlı sahədir. Yüksək maaşlı olduğunu inkar edə bilmərik 😁 , lakin yalnız professional mühitdə istifadə olunduğu fikrinin mif olduğunu asanlıqla iddia edirik. 

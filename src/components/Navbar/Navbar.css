@@ -1,5 +1,4 @@
 nav{
-    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +10,12 @@ nav{
     top: 0;
     left: 0;
     z-index: 1000;
+}
+.light nav{
+    background-color: #FFFFFF;
+}
+.dark nav{
+    background-color: black;
 }
 .logo{
     color: green;

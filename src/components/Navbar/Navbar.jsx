@@ -7,7 +7,7 @@ function Navbar({isDarkMode, onToggle}) {
 const navRef = useRef();
 
   function openMenu(){
-    if(navRef.current.style.opacity == "0" && navRef.current.style.visibility=="hidden"){
+    if(navRef.current.style.opacity == "0" && navRef.current.style.visibility == "hidden"){
       navRef.current.style.opacity = "1";
       navRef.current.style.visibility = "visible";
     }else{
@@ -138,11 +138,11 @@ const toggleSubmenu = (id) => {
       </ul>
       <div className="nav-third-box">
         <div className="mode">
-            {isDarkMode ? <span>İşıqları <br /> yandır</span> 
+            {isDarkMode === "dark" ? <span>İşıqları <br /> yandır</span> 
             : <span>İşıqları <br /> söndür</span>}
           <div className="mode-btn-box">
             <input type="checkbox" id="navbar-switch-mode" 
-            checked={isDarkMode} onChange={onToggle}
+            checked={isDarkMode === "dark"} onChange={onToggle}
             />
             <label htmlFor="navbar-switch-mode" className="mode-btn"></label>
           </div>

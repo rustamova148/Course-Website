@@ -46,11 +46,11 @@ function Footer({isDarkMode, onToggle}) {
         </div>
         <p style={{color: '#585858', fontSize: '15px'}}>Telefon: + (994) 70 256 96 00</p>
         <div className="mode">
-            {isDarkMode ? <span>İşıqları <br /> yandır</span> 
+            {isDarkMode === "dark" ? <span>İşıqları <br /> yandır</span> 
             : <span>İşıqları <br /> söndür</span>}
           <div className="mode-btn-box">
             <input type="checkbox" id="footer-switch-mode" 
-            checked={isDarkMode} onChange={onToggle}
+            checked={isDarkMode === "dark"} onChange={onToggle}
             />
             <label htmlFor="footer-switch-mode" className="mode-btn"></label>
           </div>
