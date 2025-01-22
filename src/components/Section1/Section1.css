@@ -7,6 +7,10 @@
     gap: 40px;
     padding: 80px;
     padding-bottom: 98px;
+    margin-top: -7px;
+}
+.dark .section1{
+    background-color: black;
 }
 .field{
     background-color: #F4F4F6;
@@ -16,6 +20,9 @@
     gap: 40px;
     width: 49%;
     cursor: pointer;
+}
+.dark .field{
+    background-color: rgb(46, 46, 46);
 }
 .field:hover{
     animation: fieldUp 0.7s ease forwards;
@@ -42,6 +49,9 @@
     color: #212529;
     text-align: center;
 }
+.dark .sec1-header{
+    color: whitesmoke;
+}
 .field-text{
     display: flex;
     flex-direction: column;
@@ -51,8 +61,14 @@
     font-size: 26px;
     color: #212529;
 }
+.dark .field-text h2{
+    color: whitesmoke;
+}
 .field-text p{
     color: #212529;
+}
+.dark .field-text p{
+    color: whitesmoke;
 }
 @media screen and (max-width: 1409px){
     .field{

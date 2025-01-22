@@ -16,6 +16,17 @@ nav{
 }
 .dark nav{
     background-color: black;
+    color: whitesmoke;
+}
+.dark .navlinkdrop,
+.dark .navlink{
+    color: whitesmoke;
+}
+.dark .nav-dropdown1,
+.dark .nav-dropdown2,
+.dark .nav-dropdown3{
+    background-color: black;
+    color: whitesmoke;
 }
 .logo{
     color: green;
