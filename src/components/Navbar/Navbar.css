@@ -14,7 +14,7 @@ nav{
 .mode-socials{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 13px;
 }
 .light nav{
     background-color: #FFFFFF;
