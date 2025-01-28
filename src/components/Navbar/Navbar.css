@@ -11,6 +11,11 @@ nav{
     left: 0;
     z-index: 1000;
 }
+.mode-socials{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 .light nav{
     background-color: #FFFFFF;
 }
