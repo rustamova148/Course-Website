@@ -40,6 +40,11 @@ nav{
 .resp-menu{
     display: none;
 }
+
+.dark .resp-menu{
+    background-color: black;
+    color: whitesmoke;
+}
 nav .menu-bar{
     display: none;
 }
@@ -351,16 +356,26 @@ abbr[title] {
     .mainul2{
         padding: 30px 610px;
     }
+    .mode-socials{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .after-addings{
+        display: none;
+    }
 }
 @media screen and (max-width: 693px){
     nav{
         padding: 0 100px;
     }
-    .mode{
+    .mode-socials{
         display: none;
     }
-    .nav-socials{
-        display: none;
+    .after-addings{
+        display: flex;
+        align-items: center;
+        gap: 30px;
     }
     .mainul2{
         padding: 30px 870px;
