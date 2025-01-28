@@ -6,6 +6,21 @@
     padding: 70px 155px;
     gap: 160px;
 }
+.dark .footer{
+    background-color: black;
+}
+.dark .fooparts p{
+    color: whitesmoke !important;
+}
+.dark .foobrands{
+    color: whitesmoke;
+}
+.dark .fbranddiv:hover{
+    background-color: white;
+}
+.dark .fbranddiv:hover .foobrands{
+    color: black;
+}
 .fooparts1{
     display: flex;
     flex-direction: column;

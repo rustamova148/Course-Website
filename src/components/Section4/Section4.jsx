@@ -5,7 +5,7 @@ import { blogdata } from '../data'
 const Section4 = () => {
   return (
     <div className='sec4'>
-      <h2>Blog</h2>
+      <h2 className='blogh2'>Blog</h2>
         <div className="blogs">
             {blogdata.map((b,i)=> 
                 (

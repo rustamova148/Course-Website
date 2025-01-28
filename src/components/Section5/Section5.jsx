@@ -6,7 +6,8 @@ const Section5 = () => {
     <div className="sec5">
       <div className="sec5-in">
         <h2 style={{fontSize: '30px'}}>Sosial məsuliyyət</h2>
-        <p style={{color: '#353535', marginBottom: '30px'}}>#bacararsan</p>
+        <p style={{color: '#353535', marginBottom: '30px'}}
+        className="ablep">#bacararsan</p>
         <div className="sec5-cont">
           <div className="bsec5part">
             <div className="bsec5parts">

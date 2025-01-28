@@ -6,6 +6,10 @@
    gap: 40px;
    padding: 50px;
 }
+.dark .sec6{
+    background-color: black;
+    color: whitesmoke;
+}
 .partnyor-cont{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -19,6 +23,10 @@
     padding: 30px;
     border-radius: 10px;
     background-color: rgb(241, 241, 241);
+}
+.dark .partnyor-cont div{
+    background-color: rgb(126, 125, 125);
+    color: whitesmoke;
 }
 .partnyor-cont div img{
     width: 58%;

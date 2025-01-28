@@ -6,7 +6,14 @@
     align-items: start;
     gap: 20px;
 }
+.dark .sec4{
+    background-color: black;
+}
+.dark .blogh2{
+    color: whitesmoke;
+}
 .blogs{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -34,6 +34,9 @@ nav{
     font-style: italic;
     font-weight: 700;
 }
+.logolink{
+    text-decoration: none;
+}
 .resp-menu{
     display: none;
 }

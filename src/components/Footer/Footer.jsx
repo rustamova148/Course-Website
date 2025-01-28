@@ -28,20 +28,20 @@ function Footer({isDarkMode, onToggle}) {
       </div>
       <div className='fooparts'>
         <div className='fsocials'>
-          <div>
-            <i className="fa-brands fa-facebook-f"></i>
+          <div className='fbranddiv'>
+            <i className="fa-brands fa-facebook-f foobrands"></i>
           </div>
-          <div>
-            <i className="fa-brands fa-instagram"></i>
+          <div className='fbranddiv'>
+            <i className="fa-brands fa-instagram foobrands"></i>
           </div>
-          <div>
-            <i className="fa-brands fa-tiktok"></i>
+          <div className='fbranddiv'>
+            <i className="fa-brands fa-tiktok foobrands"></i>
           </div>
-          <div>
-            <i className="fa-brands fa-youtube"></i>
+          <div className='fbranddiv'>
+            <i className="fa-brands fa-youtube foobrands"></i>
           </div>
-          <div>
-            <i className="fa-brands fa-linkedin"></i>
+          <div className='fbranddiv'>
+            <i className="fa-brands fa-linkedin foobrands"></i>
           </div>
         </div>
         <p style={{color: '#585858', fontSize: '15px'}}>Telefon: + (994) 70 256 96 00</p>

@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
 }
+.dark .sec3{
+    background-color: black;
+}
 .calc{
     width: 70%;
     min-height: 600px;
@@ -21,6 +24,16 @@
     border-top-left-radius:  40px;
     border-bottom-left-radius:  40px;
 }
+.dark .calc-part1{
+    background-color: #2F2F2F;
+    color: whitesmoke;
+}
+.dark .calc-part1 .wayp,
+.dark .calc-part1 .rgv1-span,
+.dark .calc-part1 .langp,
+.dark .calc-part1 .rgv2-span{
+    color: whitesmoke !important;
+}
 .calc-part2{
     background-color: #F9F9F9;
     border-top-right-radius:  40px;
@@ -29,7 +42,18 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.dark .calc-part2{
+    background-color: #212121;
+    color: whitesmoke;
+}
+.dark .calc-part2 .salaryp,
+.dark .calc-part2 #salary,
+.dark .calc-part2 .manatsign,
+.dark .calc-part2 .invest,
+.dark .calc-part2 .futurej,
+.dark .calc-part2 .abroadof{
+    color: whitesmoke !important;
+}
 @media only screen and (max-width:1226px){
     .calc{
         flex-direction: column;

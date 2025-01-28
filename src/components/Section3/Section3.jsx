@@ -198,7 +198,8 @@ const Section3 = () => {
           </div>
         </div>
         <div className="calc-part calc-part2">
-          <p style={{ fontSize: "17px", fontWeight: "600", color: "#3b3b3b" }}>
+          <p style={{ fontSize: "17px", fontWeight: "600", color: "#3b3b3b" }}
+          className="salaryp">
             Ortalama maaşın &#x1F680;
           </p>
           <p
@@ -211,11 +212,12 @@ const Section3 = () => {
             }}
           >
             <span id='salary'></span>
-            <i className="fa-solid fa-manat-sign"></i>
+            <i className="fa-solid fa-manat-sign manatsign"></i>
           </p>
           <hr />
           <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <p style={{ color: "grey", fontSize: "14px" }}>
+            <p style={{ color: "grey", fontSize: "14px" }} 
+            className="invest">
               İnvestisiyanın geri dönüş müddəti
             </p>
             <p style={{ fontSize: "25px", fontWeight: "600", display: 'flex', gap: '3px' }}>
@@ -224,11 +226,13 @@ const Section3 = () => {
             </p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <p style={{ color: "grey", fontSize: "14px" }}>Gələcək vəzifən</p>
+            <p style={{ color: "grey", fontSize: "14px" }}
+            className="futurej">Gələcək vəzifən</p>
             <p id="jobs" style={{ fontSize: "23px", fontWeight: "600" }}></p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <p style={{ color: "grey", fontSize: "14px" }}>
+            <p style={{ color: "grey", fontSize: "14px" }}
+            className="abroadof">
               Xarici şirkətlərdən iş təklifi alma ehtimalın
             </p>
             <p style={{ fontSize: "25px", display: "flex", fontWeight: "600" }}>

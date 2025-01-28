@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./Navbar.css";
 import menuicon from '../../assets/menu-icon.svg'
+import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 function Navbar({isDarkMode, onToggle}) {
@@ -24,7 +25,9 @@ const toggleSubmenu = (id) => {
   return (
     <nav>
       <abbr title="proqramlaşdırma kursu">
+      <NavLink to='/' className='logolink' >
       <p className="logo">Coders</p>
+      </NavLink>
       </abbr>
       <ul className="mainul">
         <li> 
