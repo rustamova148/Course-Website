@@ -38,6 +38,16 @@ const Section3 = () => {
     let percent = 0;
     let month = 0;
 
+    if(selectedField === 'Fullstack Proqramlaşdırma'){
+      document.getElementById('jobs').innerHTML = 'Frontend developer, Software developer, Software engineer, Mobile FrontEnd Developer, Web developer, UI/UX developer, IT project manager';
+    }else if(selectedField === 'Backend Proqramlaşdırma (PHP, Java, Python, NodeJS)'){
+      document.getElementById('jobs').innerHTML = 'Backend developer, Web developer, Full-stack developer, Software developer, Software engineer, CTO, IT director, IT project manager';
+    }else if(selectedField === 'Digital Marketing (SMM)'){
+      document.getElementById('jobs').innerHTML = 'Head of Marketing, Rəqəmsal marketinq mütəxəssisi, SMM mütəxəssisi, Marketinq direktoru, Sahibkar';
+    }else{
+      document.getElementById('jobs').innerHTML = '';
+    }
+
     if(salary != 0 && selectedField != '- - Sahəni seçin - -' && rangeValue1 != 0){
       month = 1;
     }else{
